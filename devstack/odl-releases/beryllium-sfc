@@ -7,8 +7,8 @@ function setup_opendaylight_package {
     ## change vars below so url for zip file looks like something that is used as this
     ## wget -N $ODL_URL/$ODL_PKG
 
-    export ODL_URL=${ODL_URL:-https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.0-Beryllium}
-     ###export ODL_URL=${ODL_URL:-https://nexus.opendaylight.org/service/local/repositories/opendaylight.snapshot/content/org/opendaylight/integration/distribution-karaf/0.4.2-SNAPSHOT}
+    ##export ODL_URL=${ODL_URL:-https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.0-Beryllium}
+    export ODL_URL=${ODL_URL:-https://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/org/opendaylight/integration/distribution-karaf/0.4.2-SNAPSHOT}
     export ODL_PKG=${ODL_NAME}.zip
     # The ODL Karaf features to be loaded for OVSDB NETVIRT SFC
     ODL_NETVIRT_KARAF_FEATURE=${ODL_NETVIRT_KARAF_FEATURE:-odl-ovsdb-sfc-ui}
