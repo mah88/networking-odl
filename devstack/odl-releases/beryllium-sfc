@@ -9,7 +9,7 @@ function setup_opendaylight_package {
 
     ##export ODL_URL=${ODL_URL:-https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.0-Beryllium}
     ##export ODL_URL=${ODL_URL:-https://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/org/opendaylight/integration/distribution-karaf/0.4.3-SNAPSHOT}
-    export ODL_URL=${ODL_URL:-https://www.dropbox.com/s/kmi1mqmmt40g99y}
+    export ODL_URL=${ODL_URL:-https://www.dropbox.com/s/n9p5w6zaa9p4i6u}
     export ODL_PKG=${ODL_NAME}.zip
     # The ODL Karaf features to be loaded for OVSDB NETVIRT SFC
     ODL_NETVIRT_KARAF_FEATURE=${ODL_NETVIRT_KARAF_FEATURE:-odl-ovsdb-sfc-ui}
