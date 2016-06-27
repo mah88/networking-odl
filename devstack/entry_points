@@ -197,7 +197,7 @@ function start_opendaylight {
 #Ahmed Added function configure the table offset for SFC
 function config_sfc {
     echo "Adjusting Opendaylight Table offset for SFC"
-    curl -o /dev/null --fail --silent --head -u \
+    curl -i -u \
     ${ODL_USERNAME}:${ODL_PASSWORD}\
     -H "Accept: application/json" \
     -H "Content-Type:application/json" \
