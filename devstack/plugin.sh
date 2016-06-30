@@ -42,7 +42,7 @@ if is_service_enabled odl-server; then
         # This has to start before Neutron
         start_opendaylight
         #ADDed by AHmed to support SFC TABLE OFFSET
-        config_sfc
+        #config_sfc
     elif [[ "$1" == "stack" && "$2" == "post-extra" ]]; then
         # no-op
         :
