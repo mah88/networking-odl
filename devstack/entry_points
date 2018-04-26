@@ -126,7 +126,7 @@ function install_opendaylight {
     echo "Installing OpenDaylight and dependent packages"
 
     if is_ubuntu; then
-        install_package maven openjdk-7-jre openjdk-7-jdk
+        install_package maven openjdk-8-jre openjdk-8-jdk
     else
         yum_install maven java-1.7.0-openjdk
     fi
@@ -163,7 +163,7 @@ function install_opendaylight_compute {
 function start_opendaylight {
     echo "Starting OpenDaylight"
     if is_ubuntu; then
-        JHOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+        JHOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
     else
         JHOME=/usr/lib/jvm/java-1.7.0-openjdk
     fi
